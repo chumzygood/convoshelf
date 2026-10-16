@@ -1,7 +1,7 @@
 # Generates the Shelf product pages, compare pages, home family section and sitemap.
 # python3 tools/products.py   (BASE switches to https://convoshelf.com/ once DNS is live)
 import json, os, html, re, datetime
-BASE = "https://chumzygood.github.io/convoshelf/"
+BASE = "https://convoshelf.com/"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = datetime.date.today().isoformat()
 E = html.escape
@@ -92,7 +92,7 @@ seo = '<!--seo--><meta property=og:type content=website><meta property=og:site_n
   {"@context": "https://schema.org", "@type": "VideoObject", "name": "ConvoShelf demo", "description": "Folders, search and export across ChatGPT, Claude, Gemini and Grok.", "thumbnailUrl": BASE + "demo-poster.jpg", "contentUrl": BASE + "demo.mp4", "uploadDate": TODAY + "T00:00:00-04:00"}]) + '<!--/seo-->'
 idx = open(ROOT + "/index.html").read()
 idx = re.sub(r"<!--seo-->.*?<!--/seo-->", "", idx, flags=re.S).replace("<style>", seo + "<style>", 1)
-idx = idx.replace('content="https://chumzygood.github.io/convoshelf/folders-1280x800.png"', 'content="' + BASE + 'og.jpg"')
+idx = idx.replace('content="https://convoshelf.com/folders-1280x800.png"', 'content="' + BASE + 'og.jpg"')
 vid = '<!--vid--><video controls muted playsinline preload=none poster="demo-poster.jpg" width=1280 height=720 style="width:100%;height:auto;border:1px solid #e2e8f0;border-radius:12px;margin:24px 0"><source src="demo.mp4" type="video/mp4"><a href="demo.mp4">Download the demo</a></video><!--/vid-->'
 idx = re.sub(r"<!--vid-->.*?<!--/vid-->", "", idx, flags=re.S).replace('<img class=shot src="folders-1280x800.png"', vid + '<img class=shot src="folders-1280x800.png"', 1)
 open(ROOT + "/index.html", "w").write(idx)
