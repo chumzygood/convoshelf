@@ -1,6 +1,8 @@
-# Search Console / Bing prep (convoshelf site)
-- Sitemap: https://convoshelf.com/sitemap.xml (10 URLs incl. 3 product pages, 3 compare pages, video entries). robots.txt points to it.
-- IndexNow key file: /74280afd280c48aa0b2ad5c97d984ec2.txt (same setup as WA Folders). Submit with: curl "https://api.indexnow.org/indexnow?url=<page>&key=74280afd280c48aa0b2ad5c97d984ec2" (free, no account). Not pinged yet.
-- Google Search Console: needs Chanoch's Google sign-in. Add a URL-prefix property for https://convoshelf.com/ (or a Domain property for convoshelf.com after DNS), choose "HTML file", and drop the google*.html file it gives into this repo root. The WA Folders file (googlefd7b3bbaee78af02.html) is tied to the wafolders property and can't be reused.
-- Bing Webmaster Tools: import from Search Console once verified, or add BingSiteAuth.xml from Bing.
-- When convoshelf.com DNS is live: set BASE in tools/products.py, add CNAME, rerun python3 tools/products.py, update robots.txt.
+# Search Console / Bing / IndexNow (convoshelf site)
+Updated 2026-10-18.
+- Live at https://convoshelf.com/ (Cloudflare DNS, GitHub Pages, CNAME in repo, HTTPS enforced). www redirects to the apex.
+- Sitemap: https://convoshelf.com/sitemap.xml (10 URLs: ConvoShelf pages plus the other Shelf product and compare pages, with video entries). robots.txt allows all and points to it.
+- IndexNow key file: /74280afd280c48aa0b2ad5c97d984ec2.txt. Ping log: /workspace/convoshelf-owner/indexnow-2026-10-18/ on the box.
+- Google Search Console: index.html has meta google-site-verification fzeImh6_..., and googlefd7b3bbaee78af02.html is in the root (Google HTML-file tokens belong to a Google account, so it verifies only for the account that issued it). Preferred: Domain property convoshelf.com via a Cloudflare TXT record. Then submit sitemap.xml.
+- Bing Webmaster Tools: index.html has meta msvalidate.01 E53FD6DE.... Add the site (or import from GSC) and submit the sitemap.
+- tools/products.py regenerates product pages, compare pages, the home family section and sitemap.xml. It sets every lastmod to the run date.

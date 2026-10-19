@@ -1,5 +1,5 @@
 # Generates the Shelf product pages, compare pages, home family section and sitemap.
-# python3 tools/products.py   (BASE switches to https://convoshelf.com/ once DNS is live)
+# python3 tools/products.py   (site is live at https://convoshelf.com/; rerunning rewrites every lastmod to today)
 import json, os, html, re, datetime
 BASE = "https://convoshelf.com/"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -87,7 +87,7 @@ open(ROOT + "/index.html", "w").write(idx)
 # ConvoShelf home + faq/compare SEO: OG/Twitter cards, schema, demo video (idempotent, between markers)
 FAQS = [("Where are my chats stored?", "In your browser's local storage. ConvoShelf has no account and no server."), ("Which AI sites does ConvoShelf work with?", "ChatGPT (including Projects), Claude, Gemini and Grok."), ("Is Pro a subscription?", "No. Pro is a single $4.99 payment.")]
 seo = '<!--seo--><meta property=og:type content=website><meta property=og:site_name content=ConvoShelf><meta property=og:url content="' + BASE + '"><meta property=og:image:width content=1200><meta property=og:image:height content=630><meta name=twitter:card content=summary_large_image><meta name=twitter:image content="' + BASE + 'og.jpg"><meta name=theme-color content="#4f46e5">' + "".join('<script type="application/ld+json">' + json.dumps(x, ensure_ascii=False) + '</script>' for x in [
-  {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ConvoShelf", "applicationCategory": "BrowserApplication", "operatingSystem": "Google Chrome (desktop)", "softwareVersion": "1.0.0", "url": BASE, "description": "Folders, tags, full-text search and export for ChatGPT, Claude, Gemini and Grok chats.", "offers": [{"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Pro (one-time)", "price": "4.99", "priceCurrency": "USD"}]},
+  {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ConvoShelf", "applicationCategory": "BrowserApplication", "operatingSystem": "Google Chrome (desktop)", "softwareVersion": "1.0.1", "url": BASE, "description": "Folders, tags, full-text search and export for ChatGPT, Claude, Gemini and Grok chats.", "offers": [{"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Pro (one-time)", "price": "4.99", "priceCurrency": "USD"}]},
   {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQS]},
   {"@context": "https://schema.org", "@type": "VideoObject", "name": "ConvoShelf demo", "description": "Folders, search and export across ChatGPT, Claude, Gemini and Grok.", "thumbnailUrl": BASE + "demo-poster.jpg", "contentUrl": BASE + "demo.mp4", "uploadDate": TODAY + "T00:00:00-04:00"}]) + '<!--/seo-->'
 idx = open(ROOT + "/index.html").read()
