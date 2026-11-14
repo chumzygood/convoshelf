@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude down? Keep a readable copy of your chats for next time</title>
+<meta name="description" content="Claude had two major outages on 13 November 2026. How to export your Claude chats while it works, keep a local copy you can open offline, and carry a chat over to another AI.">
+<link rel="canonical" href="https://convoshelf.com/claude-outage-chat-backup/">
+<meta property="og:title" content="Claude down? Keep a readable copy of your chats for next time">
+<meta property="og:description" content="Claude had two major outages on 13 November 2026. How to export your Claude chats while it works, keep a local copy you can open offline, and carry a chat over to another AI.">
+<meta property="og:url" content="https://convoshelf.com/claude-outage-chat-backup/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Claude down? Keep a readable copy of your chats for next time","datePublished":"2026-11-14","dateModified":"2026-11-14","author":{"@type":"Organization","name":"Toolshed","url":"https://convoshelf.com/"},"publisher":{"@type":"Organization","name":"Toolshed","url":"https://convoshelf.com/"},"description":"Claude had two major outages on 13 November 2026. How to export your Claude chats while it works, keep a local copy you can open offline, and carry a chat over to another AI.","mainEntityOfPage":"https://convoshelf.com/claude-outage-chat-backup/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was Claude down on 13 November 2026?","acceptedAnswer":{"@type":"Answer","text":"Yes. Anthropic's status page lists two major incidents that day. From 4:58 to 6:58 AM Eastern, users had trouble signing in to claude.ai and Claude Code. From 8:09 to 10:38 AM Eastern, claude.ai, the Claude API and Claude Code returned more errors than normal, and connectors were degraded."}},{"@type":"Question","name":"Can I export my Claude chats while Claude is down?","acceptedAnswer":{"@type":"Answer","text":"Not reliably. Anthropic's export starts from Settings, then Privacy, on claude.ai or Claude Desktop, and the download link only works while you are signed in. If you can't sign in, you can't start the export or open the link. Run the export while Claude is working."}},{"@type":"Question","name":"Where is the export button in Claude?","acceptedAnswer":{"@type":"Answer","text":"On claude.ai or Claude Desktop, go to Settings, then Privacy, and click Export data. Anthropic emails a download link to your account address. The link expires 24 hours after it's created and may work only once. The export can't be run from the iOS or Android apps."}},{"@type":"Question","name":"Can I keep working on a Claude chat in ChatGPT during an outage?","acceptedAnswer":{"@type":"Answer","text":"If ConvoShelf saved that chat earlier, yes. Open ConvoShelf on ChatGPT, Gemini or Grok, go to Handoff, pick the Claude chat and how many recent turns to include, and copy the handoff pack. Free copies once per UTC day; Pro opens the target AI with the text filled in. Review it before you send."}},{"@type":"Question","name":"Does ConvoShelf upload my Claude chats?","acceptedAnswer":{"@type":"Answer","text":"No. ConvoShelf has no account and no server. It saves the text of chats you open into your browser's local extension storage. The Download backup button on its settings page writes that data to a JSON file on your computer."}}]}</script>
+<style>body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:#0f172a}a{color:#4f46e5}header,main,footer{max-width:980px;margin:0 auto;padding:0 20px}header{display:flex;align-items:center;gap:10px;padding-top:18px}header nav{margin-left:auto;display:flex;gap:16px;font-size:15px}header img{width:32px}.hero{padding:40px 0 10px}h1{font-size:40px;line-height:1.15;margin:0 0 12px}.cta{display:inline-block;background:#4f46e5;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600}.muted{color:#64748b}img.shot{width:100%;border:1px solid #e2e8f0;border-radius:12px;margin:24px 0}table{border-collapse:collapse;width:100%;font-size:15px}td,th{border-bottom:1px solid #e2e8f0;padding:8px;text-align:left}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}.card{border:1px solid #e2e8f0;border-radius:12px;padding:16px 18px}footer{padding:40px 20px;font-size:14px;color:#64748b}h2{margin-top:44px}.note{background:#f1f5f9;border-radius:10px;padding:12px 16px;font-size:15px}figure{margin:24px 0}figcaption{font-size:14px;color:#64748b}ol.steps li{margin:0 0 14px}</style>
+</head>
+<body>
+<header><img src="../icon.png" alt=""><b><a href="../" style="color:inherit;text-decoration:none">ConvoShelf</a></b><nav><a href="../#features">Features</a><a href="../#pricing">Pricing</a><a href="../compare.html">Compare</a><a href="../faq.html">FAQ</a></nav></header>
+<main>
+<article>
+<div class="hero">
+<p class="muted">Guide · 14 November 2026</p>
+<h1>Claude down? Keep a readable copy of your chats for next time</h1>
+</div>
+
+<p>The way to keep your important Claude chats readable through an outage is to have a copy outside claude.ai before it goes down: Anthropic's own export for everything, plus a local copy of the chats you use every day.</p>
+
+<p>On 13 November 2026, Claude went down twice in one morning. If you had a chat open that you needed, you found out the hard way that the only copy lived on Anthropic's servers. This guide covers what happened, why you can't count on exporting in the middle of an outage, and three things to set up while Claude is working.</p>
+
+<p class="note">Disclosure: ConvoShelf is our product. Anthropic's export is free and is the complete record of your account. ConvoShelf keeps an extra copy of the chats you open, in your own browser.</p>
+
+<h2>What happened on 13 November</h2>
+<p>Anthropic's <a href="https://status.claude.com/">Claude status page</a> lists two incidents that day, both marked major. Times below are converted to Eastern Time from the status page's records:</p>
+<ul>
+<li><strong>4:58 to 6:58 AM.</strong> <a href="https://status.claude.com/incidents/nn11wk485zfn">a sign-in and error incident on claude.ai, Claude Code and platform.claude.com</a>. The first update said Anthropic was "investigating an issue with users authenticating to Claude.ai and Claude Code." A fix was deployed at 6:05 AM and the incident was marked resolved at 6:58 AM.</li>
+<li><strong>8:09 to 10:38 AM.</strong> <a href="https://status.claude.com/incidents/34wq7gxnxvvm">raised error rates on claude.ai, the Claude API and Claude Code</a>. Later updates added connectors, including Docs and Sheets, Claude Managed Agents and Claude Security, and said the mobile apps were affected. Errors were back to normal levels at 10:33 AM.</li>
+</ul>
+
+<h2>Why you can't count on exporting during an outage</h2>
+<p>Anthropic's help article <a href="https://support.claude.com/en/articles/9450526-export-your-claude-data">Export your Claude data</a>, re-read on 14 November 2026, says the export is started from Settings, then Privacy, on the web app or Claude Desktop, and the download link arrives by email. It also says you must be signed in to your account to download the file.</p>
+<p>The first incident on 13 November was a sign-in problem. When you can't sign in, you can't start an export and you can't open the link. So the export is something to run on a normal day, not a rescue tool for a bad one.</p>
+
+<h2>1. Run Anthropic's export now</h2>
+<ol class="steps">
+<li>Open claude.ai in a browser or the Claude Desktop app. The help article says exports can't be run from the iOS or Android apps.</li>
+<li>Go to Settings, then Privacy, and click Export data.</li>
+<li>Wait for the email. It goes to the address on your Claude account.</li>
+<li>Download the file right away. The link expires 24 hours after it's created, and Anthropic says it may work only once.</li>
+<li>Keep the file somewhere other than your Claude account, such as your computer and one cloud drive.</li>
+</ol>
+<p>The article says the export includes your conversations and account data, but not the original files you uploaded. On a Team or Enterprise plan, you can export your own chats only after an owner turns on the setting that allows it. We go further into the export, and what happens after a suspension, in <a href="../back-up-claude-chats/">how to back up your Claude chats</a>.</p>
+
+<h2>2. Keep a local copy of the chats you work in</h2>
+<p>An export is a snapshot from the day you ran it. Chats from this week aren't in last month's file. For the handful of chats you rely on, a copy that updates as you work helps more.</p>
+<p>We checked the following against the code of ConvoShelf 1.1.0, the version on the Chrome Web Store, on 14 November 2026:</p>
+<ul>
+<li><strong>Saved as you go.</strong> When you open a Claude chat with ConvoShelf installed, it saves that chat's text into Chrome's local extension storage. Chats you never open are not saved.</li>
+<li><strong>One chat as a file, free.</strong> The Export tab saves the open chat as Markdown or PDF. Scroll to the top of a long chat first so every message has loaded.</li>
+<li><strong>Everything in one file.</strong> ConvoShelf's settings page has a Download backup button that writes your folders and saved chat text to a JSON file. That page belongs to the extension, so it opens in Chrome even when claude.ai won't load. Pro adds Everything as Markdown and Everything as JSON in the Export tab.</li>
+</ul>
+<p>Saved chats also show up in ConvoShelf's search, so you can find a Claude answer from the ChatGPT tab. See <a href="../search-chatgpt-and-claude-chats/">search all your ChatGPT and Claude chats in one place</a>.</p>
+
+<h2>3. Carry a chat over to another AI</h2>
+<p>If Claude is down and you need to keep going, ConvoShelf's Handoff tab builds a text pack from a saved chat that you can paste into ChatGPT, Gemini or Grok:</p>
+<ol class="steps">
+<li>Open ChatGPT, Gemini or Grok in Chrome and open the ConvoShelf panel.</li>
+<li>Go to Handoff and pick the saved Claude chat from the list.</li>
+<li>Choose how much to bring: the last 6, 12 or 24 turns.</li>
+<li>Click Copy handoff pack, paste it into the new chat, read it, then send.</li>
+</ol>
+<p>The pack starts with "Continue this conversation" and includes the chat's first prompt, title and recent turns. On the free plan you can copy one handoff pack per UTC day. Pro adds Open on target AI, which opens the other assistant with the pack already filled in.</p>
+<p>A handoff carries text only. The other AI won't have Claude's project files or memory, so expect to re-explain anything that wasn't in the chat itself.</p>
+
+<p><a class="cta" data-goatcounter-click="install" href="https://chromewebstore.google.com/detail/hjlbelfgmmhiimpcppljhlgeeiblakgj">Add ConvoShelf for Chrome</a></p>
+<p class="muted">Free, no account. Pro is $4.99 once. Works on ChatGPT, Claude, Gemini and Grok.</p>
+
+<h2>FAQ</h2>
+<h3>Was Claude down on 13 November 2026?</h3>
+<p>Yes. Anthropic&#x27;s status page lists two major incidents that day. From 4:58 to 6:58 AM Eastern, users had trouble signing in to claude.ai and Claude Code. From 8:09 to 10:38 AM Eastern, claude.ai, the Claude API and Claude Code returned more errors than normal, and connectors were degraded.</p>
+<h3>Can I export my Claude chats while Claude is down?</h3>
+<p>Not reliably. Anthropic&#x27;s export starts from Settings, then Privacy, on claude.ai or Claude Desktop, and the download link only works while you are signed in. If you can&#x27;t sign in, you can&#x27;t start the export or open the link. Run the export while Claude is working.</p>
+<h3>Where is the export button in Claude?</h3>
+<p>On claude.ai or Claude Desktop, go to Settings, then Privacy, and click Export data. Anthropic emails a download link to your account address. The link expires 24 hours after it&#x27;s created and may work only once. The export can&#x27;t be run from the iOS or Android apps.</p>
+<h3>Can I keep working on a Claude chat in ChatGPT during an outage?</h3>
+<p>If ConvoShelf saved that chat earlier, yes. Open ConvoShelf on ChatGPT, Gemini or Grok, go to Handoff, pick the Claude chat and how many recent turns to include, and copy the handoff pack. Free copies once per UTC day; Pro opens the target AI with the text filled in. Review it before you send.</p>
+<h3>Does ConvoShelf upload my Claude chats?</h3>
+<p>No. ConvoShelf has no account and no server. It saves the text of chats you open into your browser&#x27;s local extension storage. The Download backup button on its settings page writes that data to a JSON file on your computer.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://status.claude.com/incidents/nn11wk485zfn">Claude status page: incident on claude.ai, Claude Code and platform.claude.com, 13 November 2026, 4:58 AM ET</a></li>
+<li><a href="https://status.claude.com/incidents/34wq7gxnxvvm">Claude status page: incident on claude.ai, the Claude API and Claude Code, 13 November 2026, 8:09 AM ET</a></li>
+<li><a href="https://support.claude.com/en/articles/9450526-export-your-claude-data">Claude Help Center: Export your Claude data</a></li>
+</ul>
+
+<h2>Related</h2>
+<ul>
+<li><a href="../back-up-claude-chats/">How to back up your Claude chats before a suspension</a></li>
+<li><a href="../search-chatgpt-and-claude-chats/">Search all your ChatGPT and Claude chats in one place</a></li>
+<li><a href="../export-chatgpt-conversation/">How to export a ChatGPT conversation to a file</a></li>
+<li><a href="../how-to-organize-chatgpt-chats/">How to organize ChatGPT, Claude, Gemini and Grok chats into folders</a></li>
+</ul>
+</article>
+</main>
+<footer>ConvoShelf · Support: <a href="mailto:toolshed+convoshelf@mail.grokbot.com">toolshed+convoshelf@mail.grokbot.com</a> · <a href="../privacy.html">Privacy</a> · <a href="../faq.html">FAQ</a><br>Not affiliated with OpenAI, Anthropic, Google or xAI. ChatGPT, Claude, Gemini and Grok are trademarks of their owners.</footer>
+<script data-goatcounter="https://convoshelf.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
