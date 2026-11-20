@@ -63,5 +63,102 @@
   });
 })();
 </script>
+<!-- whynot-buy: one-question survey, answers go to GoatCounter as events (no new service) -->
+<style>
+#wn{position:fixed;right:16px;bottom:16px;z-index:50;width:340px;max-width:calc(100vw - 32px);box-sizing:border-box;background:#fff;color:#0f172a;border:1px solid #cbd5e1;border-radius:12px;box-shadow:0 6px 24px rgba(15,23,42,.14);padding:14px 16px 16px;font:16px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+#wn[hidden]{display:none}
+#wn h2{font-size:16px;margin:0 36px 10px 0;line-height:1.35}
+#wn .x{position:absolute;top:6px;right:6px;width:40px;height:40px;border:0;background:none;border-radius:8px;font-size:22px;line-height:1;color:#475569;cursor:pointer}
+#wn .x:hover{background:#f1f5f9}
+#wn fieldset{border:0;margin:0;padding:0;display:grid;gap:4px}
+#wn .open{display:none}
+#wn.mini form>*:not(h2){display:none}#wn.mini .open{display:inline-block}#wn.mini h2{margin-bottom:8px}
+#wn label.o{display:flex;align-items:center;gap:10px;min-height:36px;padding:4px 10px;border:1px solid #e2e8f0;border-radius:8px;cursor:pointer}
+#wn label.o:hover{border-color:#a5b4fc}
+#wn label.o:has(input:checked){border-color:#4f46e5;background:#eef2ff}
+#wn input[type=radio]{width:18px;height:18px;margin:0;accent-color:#4f46e5}
+#wn .t{display:block;margin:10px 0 4px;font-size:15px;color:#334155}
+#wn input[type=text]{width:100%;box-sizing:border-box;min-height:40px;padding:8px 10px;border:1px solid #94a3b8;border-radius:8px;font:inherit}
+#wn .row{display:flex;align-items:center;gap:12px;margin-top:12px}
+#wn .send{background:#4f46e5;color:#fff;border:0;border-radius:10px;padding:10px 18px;min-height:44px;font:inherit;font-weight:600;cursor:pointer}
+#wn .send:hover{background:#4338ca}
+#wn .send:disabled{background:#94a3b8;cursor:not-allowed}
+#wn .skip{background:none;border:0;color:#475569;font:inherit;font-size:15px;text-decoration:underline;cursor:pointer;min-height:44px;padding:0 4px}
+#wn .fine{font-size:14px;color:#475569;margin:8px 0 0}
+#wn :focus-visible{outline:3px solid #4f46e5;outline-offset:2px}
+#wn .err{color:#b91c1c;font-size:15px;margin:8px 0 0}
+@media (max-width:520px){#wn{right:8px;left:8px;bottom:8px;width:auto;max-width:none;max-height:70vh;overflow:auto}}
+@media (prefers-reduced-motion:no-preference){#wn.in{animation:wnin .2s ease-out}@keyframes wnin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}}
+</style>
+<section id="wn" hidden aria-labelledby="wn-h">
+<button type="button" class="x" id="wn-x" aria-label="Close">&times;</button>
+<form id="wn-f">
+<h2 id="wn-h">Not buying Pro today? What's the main reason?</h2>
+<button type="button" class="send open" id="wn-open">Answer (1 question)</button>
+<fieldset><legend class="sr" style="position:absolute;left:-9999px">Main reason</legend>
+<label class="o"><input type="radio" name="wn" value="just-looking"> Just looking for now</label>
+<label class="o"><input type="radio" name="wn" value="free-is-enough"> The free plan does what I need</label>
+<label class="o"><input type="radio" name="wn" value="price"> Not worth $4.99 to me</label>
+<label class="o"><input type="radio" name="wn" value="missing-feature"> Missing a feature I need</label>
+<label class="o"><input type="radio" name="wn" value="checkout-problem"> Checkout didn't work or felt unsafe</label>
+</fieldset>
+<label class="t" for="wn-more">Anything else? (optional)</label>
+<input type="text" id="wn-more" maxlength="200" autocomplete="off">
+<div class="row"><button type="submit" class="send" id="wn-send" disabled>Send</button><button type="button" class="skip" id="wn-skip">No thanks</button></div>
+<p class="fine">Anonymous. Please don't type your email here. To get a reply, write to <a href="mailto:toolshed+convoshelf@mail.grokbot.com">toolshed+convoshelf@mail.grokbot.com</a>.</p>
+<p class="err" id="wn-err" hidden>Couldn't send. An ad blocker or a lost connection can stop it. Try again, or email us at the address above.</p>
+</form>
+<p id="wn-ok" hidden role="status"><b>Thanks, we got it.</b> It helps us decide what to fix.</p>
+</section>
+<script>
+(function(){
+  var KEY='cs_whynot', DAYS=30, box=document.getElementById('wn');
+  if(!box) return;
+  try{ var last=+localStorage.getItem(KEY)||0; if(Date.now()-last<DAYS*864e5) return; }catch(e){}
+  var q=new URLSearchParams(location.search);
+  if(q.get('wn')==='off') return;
+  var f=document.getElementById('wn-f'), send=document.getElementById('wn-send'), more=document.getElementById('wn-more'), err=document.getElementById('wn-err');
+  var shown=false, start=Date.now(), seenTable=false;
+  function gc(path,title){
+    if(!(window.goatcounter&&window.goatcounter.count)) return false;
+    try{ window.goatcounter.count({path:'whynot-buy/'+path,title:title||path,event:true}); return true; }catch(e){ return false; }
+  }
+  function remember(){ try{localStorage.setItem(KEY,String(Date.now()));}catch(e){} }
+  function show(why){
+    if(shown) return; shown=true; box.hidden=false; box.className='in'+(matchMedia('(max-width:520px)').matches?' mini':''); gc('shown-'+why);
+  }
+  function close(how){ box.hidden=true; remember(); if(how) gc(how); document.removeEventListener('keydown',esc); }
+  function esc(e){ if(e.key==='Escape'&&!box.hidden) close('dismissed'); }
+  document.addEventListener('keydown',esc);
+  document.getElementById('wn-open').addEventListener('click',function(){box.classList.remove('mini'); gc('expanded'); var r=f.querySelector('input[name=wn]'); if(r) r.focus();});
+  document.getElementById('wn-x').addEventListener('click',function(){close('dismissed');});
+  document.getElementById('wn-skip').addEventListener('click',function(){close('dismissed');});
+  function upd(){ send.disabled=!(f.querySelector('input[name=wn]:checked')||more.value.trim()); }
+  f.addEventListener('change',upd); more.addEventListener('input',upd);
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); if(send.disabled) return;
+    var r=f.querySelector('input[name=wn]:checked'), v=r?r.value:'other', label=r?r.parentNode.textContent.trim():'Other';
+    var t=more.value.replace(/\s+/g,' ').trim().slice(0,200);
+    var ok=gc(v,label); if(t) ok=gc('text-'+v,t)&&ok;
+    if(!ok){ err.hidden=false; return; }
+    err.hidden=true; f.hidden=true; document.getElementById('wn-ok').hidden=false; remember();
+    setTimeout(function(){box.hidden=true;},4000);
+  });
+  // Trigger 1: they pressed the checkout button and came back without buying.
+  var go=document.getElementById('go');
+  if(go) go.addEventListener('click',function(){ try{sessionStorage.setItem('cs_wn_checkout','1');}catch(e){} });
+  function back(){ try{ if(sessionStorage.getItem('cs_wn_checkout')==='1'){ sessionStorage.removeItem('cs_wn_checkout'); setTimeout(function(){show('back-from-checkout');},1200); return true; } }catch(e){} return false; }
+  window.addEventListener('pageshow',function(e){ if(e.persisted) back(); });
+  if(back()) return;
+  // Trigger 2: 30 seconds on the page after scrolling to the price table, without pressing checkout.
+  var table=document.querySelector('table');
+  if(table&&'IntersectionObserver' in window){ new IntersectionObserver(function(es,o){ if(es[0].isIntersecting){seenTable=true;o.disconnect();} }).observe(table); } else seenTable=true;
+  var iv=setInterval(function(){
+    if(shown){clearInterval(iv);return;}
+    if(document.visibilityState==='visible'&&seenTable&&Date.now()-start>30000){ clearInterval(iv); show('timer'); }
+  },1000);
+})();
+</script>
+<!-- /whynot-buy -->
 <script data-goatcounter="https://convoshelf.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body></html>
