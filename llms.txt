@@ -1,0 +1,20 @@
+# ConvoShelf
+
+> ConvoShelf is a Chrome extension by Toolshed that adds folders, tags, full-text search and export to your ChatGPT, Claude, Gemini and Grok chats, with your data kept in your browser. You can import a ChatGPT data export and search those chats on your computer.
+
+Current store version, checked November 19, 2026: 1.2.0, live on Chrome, Firefox and Edge. The free plan has no time limit: unlimited top-level folders, tags and pins, full-text search of opened chats (up to 3,000) plus an imported ChatGPT export (up to 20,000 chats; a very long imported chat keeps its most recent 400,000 characters), export of the open chat to Markdown or PDF, 10 saved prompts (a chain counts as one), 10 clips and 1 handoff a day, a command palette and prompt blanks. Pro is US$4.99 once, with no subscription, and adds subfolders up to 3 levels, bulk and JSON export, search filters, bulk move, tag and pin, folder colors, unlimited prompts and clips, clip export, one-click handoff, and jump-to-message from a search result.
+
+There is no ConvoShelf account or chat-storage server. Folders, tags and saved chat text stay in the browser. The only network request is the Pro license check, which sends the license key to Polar; saved chats and library content are not sent. Search depends on chats opened and indexed in this browser, plus any ChatGPT export you import. Official exports from Claude, Gemini or Grok cannot be imported. ConvoShelf is not affiliated with OpenAI, Anthropic, Google or xAI.
+
+## Product and help
+- [Features and pricing](https://convoshelf.com/)
+- [Install ConvoShelf on Chrome](https://chromewebstore.google.com/detail/hjlbelfgmmhiimpcppljhlgeeiblakgj)
+- [Firefox listing](https://addons.mozilla.org/firefox/addon/convoshelf/)
+- [Edge listing](https://microsoftedge.microsoft.com/addons/detail/convoshelf-folders-sear/fghgkokbjckplpncaocdibflmklkocnj)
+- [Organize AI chats](https://convoshelf.com/how-to-organize-chatgpt-chats/)
+- [Search ChatGPT and Claude chats](https://convoshelf.com/search-chatgpt-and-claude-chats/)
+- [Export a ChatGPT conversation](https://convoshelf.com/export-chatgpt-conversation/)
+- [Prompt library](https://convoshelf.com/chatgpt-prompt-library/)
+- [FAQ](https://convoshelf.com/faq.html)
+- [Compare options](https://convoshelf.com/compare.html)
+- [Privacy](https://convoshelf.com/privacy.html)
