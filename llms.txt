@@ -16,6 +16,7 @@ There is no ConvoShelf account or chat-storage server. Folders, tags and saved c
 - [Search ChatGPT and Claude chats](https://convoshelf.com/search-chatgpt-and-claude-chats/)
 - [Export a ChatGPT conversation](https://convoshelf.com/export-chatgpt-conversation/)
 - [Prompt library](https://convoshelf.com/chatgpt-prompt-library/)
+- [GPT-5.6 Sol retires Dec 23: what happens to your ChatGPT chats](https://convoshelf.com/gpt-5-6-sol-retirement/)
 - [ChatGPT export ZIP incomplete or won't extract](https://convoshelf.com/chatgpt-data-export-incomplete-zip/)
 - [All guides](https://convoshelf.com/guides/)
 - [FAQ](https://convoshelf.com/faq.html)
