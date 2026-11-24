@@ -11,6 +11,7 @@ There is no ConvoShelf account or chat-storage server. Folders, tags and saved c
 - [Install ConvoShelf on Chrome](https://chromewebstore.google.com/detail/hjlbelfgmmhiimpcppljhlgeeiblakgj)
 - [Firefox listing](https://addons.mozilla.org/firefox/addon/convoshelf/)
 - [Edge listing](https://microsoftedge.microsoft.com/addons/detail/convoshelf-folders-sear/fghgkokbjckplpncaocdibflmklkocnj)
+- [ChatGPT, Claude and Gemini folders in Firefox and Microsoft Edge](https://convoshelf.com/chatgpt-folders-firefox-edge/)
 - [Organize AI chats](https://convoshelf.com/how-to-organize-chatgpt-chats/)
 - [Search ChatGPT and Claude chats](https://convoshelf.com/search-chatgpt-and-claude-chats/)
 - [Export a ChatGPT conversation](https://convoshelf.com/export-chatgpt-conversation/)
