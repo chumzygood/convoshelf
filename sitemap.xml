@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url><loc>https://convoshelf.com/</loc><lastmod>2026-11-18</lastmod><video:video><video:thumbnail_loc>https://convoshelf.com/demo-poster.jpg</video:thumbnail_loc><video:title>ConvoShelf demo</video:title><video:description>Folders, search and export for ChatGPT, Claude, Gemini and Grok chats.</video:description><video:content_loc>https://convoshelf.com/demo.mp4</video:content_loc></video:video></url>
-<url><loc>https://convoshelf.com/how-to-organize-chatgpt-chats/</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://convoshelf.com/how-to-organize-chatgpt-chats/</loc><lastmod>2026-11-25</lastmod></url>
 <url><loc>https://convoshelf.com/chatgpt-locked-chats/</loc><lastmod>2026-11-21</lastmod></url>
 <url><loc>https://convoshelf.com/back-up-claude-chats/</loc><lastmod>2026-11-23</lastmod></url>
 <url><loc>https://convoshelf.com/search-chatgpt-and-claude-chats/</loc><lastmod>2026-11-18</lastmod></url>
@@ -39,7 +39,7 @@
 <url><loc>https://convoshelf.com/chatgpt-account-deactivated-save-your-chats/</loc><lastmod>2026-11-23</lastmod></url>
 <url><loc>https://convoshelf.com/chatgpt-folders-extension/</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://convoshelf.com/chatgpt-prompt-library/</loc><lastmod>2026-11-18</lastmod></url>
-<url><loc>https://convoshelf.com/claude-gemini-chat-folders/</loc><lastmod>2026-11-18</lastmod></url>
+<url><loc>https://convoshelf.com/claude-gemini-chat-folders/</loc><lastmod>2026-11-25</lastmod></url>
 <url><loc>https://convoshelf.com/chatgpt-keyboard-shortcuts/</loc><lastmod>2026-11-19</lastmod></url>
 <url><loc>https://convoshelf.com/llms.txt</loc><lastmod>2026-11-19</lastmod></url>
 <url><loc>https://convoshelf.com/chatgpt-temporary-chat/</loc><lastmod>2026-11-20</lastmod></url>
@@ -54,4 +54,6 @@
 <url><loc>https://convoshelf.com/convoshelf-vs-chatfolders/</loc><lastmod>2026-11-20</lastmod></url>
 <url><loc>https://convoshelf.com/chatgpt-folders-firefox-edge/</loc><lastmod>2026-11-24</lastmod></url>
 <url><loc>https://convoshelf.com/gpt-5-6-sol-retirement/</loc><lastmod>2026-11-24</lastmod></url>
+<url><loc>https://convoshelf.com/organize-claude-chats-into-folders/</loc><lastmod>2026-11-25</lastmod></url>
+<url><loc>https://convoshelf.com/chatgpt-projects-vs-folders-extension/</loc><lastmod>2026-11-25</lastmod></url>
 </urlset>
