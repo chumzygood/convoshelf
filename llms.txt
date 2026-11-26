@@ -23,6 +23,7 @@ There is no ConvoShelf account or chat-storage server. Folders, tags and saved c
 - [GPT-5.6 Sol retires Dec 23: what happens to your ChatGPT chats](https://convoshelf.com/gpt-5-6-sol-retirement/)
 - [ChatGPT export ZIP incomplete or won't extract](https://convoshelf.com/chatgpt-data-export-incomplete-zip/)
 - [All guides](https://convoshelf.com/guides/)
+- [All features, each with a short video](https://convoshelf.com/features/)
 - [FAQ](https://convoshelf.com/faq.html)
 - [Compare options](https://convoshelf.com/compare.html)
 - [Privacy](https://convoshelf.com/privacy.html)
