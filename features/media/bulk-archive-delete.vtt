@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.991 --> 00:00:05.892
+Bulk archive and delete
+Coming in 1.3.0. Try it safely with Dry-run first.
+
+2
+00:00:05.892 --> 00:00:17.338
+Select chats, then confirm
+You see every title first. To delete, type DELETE and the number, e.g. DELETE 12
+
+3
+00:00:17.338 --> 00:00:23.833
+Dry-run on: nothing is changed
+Free deletes up to 10 chats per run; Pro goes above 10

@@ -1,0 +1,11 @@
+WEBVTT
+
+1
+00:00:00.961 --> 00:00:04.123
+Fast site-change fixes
+Coming in 1.3.0: when an AI site changes, a small settings file fixes it fast
+
+2
+00:00:04.123 --> 00:00:09.417
+No code, no chat data sent
+At most one check every 12 hours. You can turn it off.

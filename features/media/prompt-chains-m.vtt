@@ -1,0 +1,11 @@
+WEBVTT
+
+1
+00:00:00.093 --> 00:00:11.407
+Prompt chains and variables
+Fill in {{name}} once, step through a multi-step prompt
+
+2
+00:00:11.407 --> 00:00:16.625
+Variables filled, nothing sent
+Chains fill one step at a time; you press Send
