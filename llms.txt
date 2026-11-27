@@ -16,6 +16,7 @@ There is no ConvoShelf account or chat-storage server. Folders, tags and saved c
 - [Search ChatGPT and Claude chats](https://convoshelf.com/search-chatgpt-and-claude-chats/)
 - [Export a ChatGPT conversation](https://convoshelf.com/export-chatgpt-conversation/)
 - [Prompt library](https://convoshelf.com/chatgpt-prompt-library/)
+- [Character.AI chats up for auction Dec 1: export or delete yours](https://convoshelf.com/character-ai-chat-auction-export-delete/)
 - [How to save part of a ChatGPT answer and find it again](https://convoshelf.com/save-part-of-chatgpt-answer/)
 - [How to organize Claude chats into folders](https://convoshelf.com/organize-claude-chats-into-folders/)
 - [Claude Sonnet 4.6 leaves the model selector Dec 8: your chats and Sonnet 5.5](https://convoshelf.com/claude-sonnet-4-6-leaving-model-selector/)
