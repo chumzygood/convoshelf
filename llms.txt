@@ -20,6 +20,7 @@ There is no ConvoShelf account or chat-storage server. Folders, tags and saved c
 - [How to save part of a ChatGPT answer and find it again](https://convoshelf.com/save-part-of-chatgpt-answer/)
 - [How to organize Claude chats into folders](https://convoshelf.com/organize-claude-chats-into-folders/)
 - [Claude Sonnet 4.6 leaves the model selector Dec 8: your chats and Sonnet 5.5](https://convoshelf.com/claude-sonnet-4-6-leaving-model-selector/)
+- [How to delete multiple Gemini chats at once (November 2026)](https://convoshelf.com/delete-multiple-gemini-chats/)
 - [ChatGPT Projects vs a folders extension: when to use each](https://convoshelf.com/chatgpt-projects-vs-folders-extension/)
 - [GPT-5.6 Sol retires Dec 23: what happens to your ChatGPT chats](https://convoshelf.com/gpt-5-6-sol-retirement/)
 - [ChatGPT export ZIP incomplete or won't extract](https://convoshelf.com/chatgpt-data-export-incomplete-zip/)
