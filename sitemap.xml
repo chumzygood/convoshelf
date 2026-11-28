@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://convoshelf.com/</loc><lastmod>__CS140_LIVE_DATE__</lastmod><video:video><video:thumbnail_loc>https://convoshelf.com/demo-poster.jpg</video:thumbnail_loc><video:title>ConvoShelf demo</video:title><video:description>Folders, search and export for ChatGPT, Claude, Gemini and Grok chats.</video:description><video:content_loc>https://convoshelf.com/demo.mp4</video:content_loc></video:video></url>
+<url><loc>https://convoshelf.com/</loc><lastmod>2026-11-28</lastmod><video:video><video:thumbnail_loc>https://convoshelf.com/demo-poster.jpg</video:thumbnail_loc><video:title>ConvoShelf demo</video:title><video:description>Folders, search and export for ChatGPT, Claude, Gemini and Grok chats.</video:description><video:content_loc>https://convoshelf.com/demo.mp4</video:content_loc></video:video></url>
 <url><loc>https://convoshelf.com/how-to-organize-chatgpt-chats/</loc><lastmod>2026-11-26</lastmod></url>
 <url><loc>https://convoshelf.com/chatgpt-locked-chats/</loc><lastmod>2026-11-21</lastmod></url>
 <url><loc>https://convoshelf.com/back-up-claude-chats/</loc><lastmod>2026-11-23</lastmod></url>
 <url><loc>https://convoshelf.com/search-chatgpt-and-claude-chats/</loc><lastmod>2026-11-18</lastmod></url>
-<url><loc>https://convoshelf.com/pro/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/faq.html</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/compare.html</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/privacy.html</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
+<url><loc>https://convoshelf.com/pro/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/faq.html</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/compare.html</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/privacy.html</loc><lastmod>2026-11-28</lastmod></url>
 <url><loc>https://convoshelf.com/x-bookmarks/</loc><lastmod>2026-10-15</lastmod><video:video><video:thumbnail_loc>https://convoshelf.com/x-bookmarks/demo-poster.jpg</video:thumbnail_loc><video:title>X Bookmarks Shelf demo</video:title><video:description>Search your X bookmarks, sort them into folders, and export them to Markdown, CSV or JSON. Keeps posts that get deleted. Local only, free plan, Pro $4.99 once.</video:description><video:content_loc>https://convoshelf.com/x-bookmarks/demo.mp4</video:content_loc></video:video></url>
 <url><loc>https://convoshelf.com/reddit-saved/</loc><lastmod>2026-10-15</lastmod><video:video><video:thumbnail_loc>https://convoshelf.com/reddit-saved/demo-poster.jpg</video:thumbnail_loc><video:title>Saved Shelf demo</video:title><video:description>Search your saved Reddit posts and comments, sort them into folders, and keep a copy past the 1,000-item cap. Local only, free plan, Pro $4.99 once.</video:description><video:content_loc>https://convoshelf.com/reddit-saved/demo.mp4</video:content_loc></video:video></url>
 <url><loc>https://convoshelf.com/watch-later/</loc><lastmod>2026-10-15</lastmod><video:video><video:thumbnail_loc>https://convoshelf.com/watch-later/demo-poster.jpg</video:thumbnail_loc><video:title>Watch Later Shelf demo</video:title><video:description>Search YouTube Watch Later by title or channel, filter by length or watched, find duplicates and bulk-remove videos with no monthly cap. Pro $4.99 once.</video:description><video:content_loc>https://convoshelf.com/watch-later/demo.mp4</video:content_loc></video:video></url>
@@ -59,7 +59,7 @@
 <url><loc>https://convoshelf.com/claude-sonnet-4-6-leaving-model-selector/</loc><lastmod>2026-11-26</lastmod></url>
 <url><loc>https://convoshelf.com/pt-br/claude-sonnet-4-6-sai-do-seletor-de-modelos/</loc><lastmod>2026-11-26</lastmod></url>
 <url><loc>https://convoshelf.com/save-part-of-chatgpt-answer/</loc><lastmod>2026-11-26</lastmod></url>
-<url><loc>https://convoshelf.com/features/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
+<url><loc>https://convoshelf.com/features/</loc><lastmod>2026-11-28</lastmod></url>
 <url><loc>https://convoshelf.com/features/folders/</loc><lastmod>2026-11-26</lastmod></url>
 <url><loc>https://convoshelf.com/features/tags-pins/</loc><lastmod>2026-11-26</lastmod></url>
 <url><loc>https://convoshelf.com/features/all-ais/</loc><lastmod>2026-11-26</lastmod></url>
@@ -70,19 +70,19 @@
 <url><loc>https://convoshelf.com/features/export/</loc><lastmod>2026-11-26</lastmod></url>
 <url><loc>https://convoshelf.com/features/handoff/</loc><lastmod>2026-11-26</lastmod></url>
 <url><loc>https://convoshelf.com/features/clips/</loc><lastmod>2026-11-26</lastmod></url>
-<url><loc>https://convoshelf.com/features/outline/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/features/import-chatgpt-export/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
+<url><loc>https://convoshelf.com/features/outline/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/features/import-chatgpt-export/</loc><lastmod>2026-11-28</lastmod></url>
 <url><loc>https://convoshelf.com/features/backup-restore/</loc><lastmod>2026-11-26</lastmod></url>
 <url><loc>https://convoshelf.com/features/dark-mode-shortcuts/</loc><lastmod>2026-11-26</lastmod></url>
-<url><loc>https://convoshelf.com/features/index-history/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/features/bulk-archive-delete/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/features/browser-sync/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/features/site-fixes/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/features/panel-side-rail/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/features/bookmarks/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/features/slash-prompts/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/features/auto-file-rules/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
-<url><loc>https://convoshelf.com/features/redacted-export/</loc><lastmod>__CS140_LIVE_DATE__</lastmod></url>
+<url><loc>https://convoshelf.com/features/index-history/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/features/bulk-archive-delete/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/features/browser-sync/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/features/site-fixes/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/features/panel-side-rail/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/features/bookmarks/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/features/slash-prompts/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/features/auto-file-rules/</loc><lastmod>2026-11-28</lastmod></url>
+<url><loc>https://convoshelf.com/features/redacted-export/</loc><lastmod>2026-11-28</lastmod></url>
 <url><loc>https://convoshelf.com/character-ai-chat-auction-export-delete/</loc><lastmod>2026-11-27</lastmod></url>
 <url><loc>https://convoshelf.com/delete-multiple-gemini-chats/</loc><lastmod>2026-11-28</lastmod></url>
 <url><loc>https://convoshelf.com/pt-br/excluir-varias-conversas-gemini/</loc><lastmod>2026-11-28</lastmod></url>
